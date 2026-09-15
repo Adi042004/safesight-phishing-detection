@@ -1,13 +1,36 @@
 # Dataset
 
-The dataset used for this project was obtained from Kaggle.
+This folder contains the dataset used for the SafeSight phishing website detection project.
 
-Due to GitHub's web upload size limitation, the complete dataset is not included in this repository.
+## Dataset Structure
 
-The dataset contains labeled examples of legitimate and phishing websites used for training and evaluating the phishing detection model.
+The dataset contains URLs along with their corresponding classification labels.
+
+| Column | Description |
+|--------|-------------|
+| `URL` | Website URL used for phishing detection |
+| `Label` | Classification label for the URL |
+
+Example:
+
+| URL | Label |
+|-----|-------|
+| example.com | good |
+| suspicious-site.com | bad |
+
+## Labels
+
+- `bad` — Indicates a potentially malicious/phishing URL.
+- `good` — Indicates a legitimate/safe URL.
 
 ## Dataset Source
 
-Kaggle: [Dataset Link]
+The dataset was obtained from Kaggle and is used for educational and machine-learning purposes.
 
-Download the dataset and place the required CSV file in this folder before running the notebooks.
+The complete dataset is not included in this repository because it exceeds GitHub's web upload limit.
+
+To reproduce the project, download the dataset and place the CSV file in this `Dataset` folder.
+
+## Usage
+
+The dataset is processed by the machine-learning notebooks in this project to train and evaluate the phishing website detection model.
